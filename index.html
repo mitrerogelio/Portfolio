@@ -8,74 +8,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="hero-container">
-        <!--Navigation-->    
-        <header>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-                <h1>Rogelio Mitre</h1>
-                <button>Contact Me</button>
-            </nav>
-        </header>
+    <!--Navigation-->   
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <h1>Rogelio Mitre</h1>
+        <button>Contact Me</button>
+    </nav>
 
-        <!--Hero Section-->
-        <section id="hero-sentence">Frontend Web Developer based in Minneapolis.</section>
-        <section class="hero-block">
-            <h2>My Mission</h2>
-            <p>insert mission here</p> 
-        </section>
-        <section class="hero-block">
-            <h2>Tools</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        </section>
+    <!--Hero Section-->
+    <section class="grid-container" id="hero-section">
+        <h2 id="hero-sentence">Frontend Web Developer based in Minneapolis.</h2>
+        <h3 id="misison">My Mission</h2>
+        <p id="mission-decription">insert mission here</p> 
+        <h3 id="tools">Tools</h2>
+        <ul id="tools-description">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
     </section>
 
     <!--Projects Section-->
-    <section class="projects-container">
-        <article class="project">
-            <h2>Restaurant Project</h2>
-            <h3>Highlights</h3>
-            <ul>
-                <li>Built from scratch</li>
-                <li>Fontawesome Integration</li>
-                <li>Google Font Integration</li>
-            </ul>
-            <img class="project-image" src="#" />
-        </article>
-        <article class="project">
-            <h2>Gym Project</h2>
-            <h3>Highlights</h3>
-            <ul>
-                <li>Built from scratch</li>
-                <li>HTML & CSS</li>
-                <li>Images from Unsplash</li>
-            </ul>
-            <img class="project-image" src="#" />
-        </article>
-        <article class="project">
-            <h2>Cofee Shop Project</h2>
-            <h3>Highlights</h3>
-            <ul>
-                <li>Built from scratch</li>
-                <li>HTML & CSS</li>
-                <li>Images from Unsplash</li>
-            </ul>
-            <img class="project-image" src="#" />
-        </article>
-    </section> 
+    <section class="grid-container" id="project-section">
+        <!--Project One - Fitness-->
+        <h2 class="project-title" id="fitness-title">Fitness Project</h2>
+        <h3 class="project-highlight" id="fitness-highlight">Highlights</h3>
+        <ul class="project-list" id="fitness-list">
+            <li>Built from scratch</li>
+            <li>Fontawesome Integration</li>
+            <li>Google Font Integration</li>
+        </ul>
+        <img class="project-image" id="fitness-image" src="#" />
+
+        <!--Project Two - Restaurant-->
+        <h2 class="project-title" id="restaurant-title">Restaurant Project</h2>
+        <h3 class="project-highlight" id="restaurant-highlight">Highlights</h3>
+        <ul class="project-list" id="restaurant-list">
+            <li>Built from scratch</li>
+            <li>Flexbox</li>
+            <li>Unsplash Images</li>
+        </ul>
+        <img class="project-image" id="restaurant-image" src="#" />
+
+        <!--Project Three - Coffee Shop-->
+        <h2 class="project-title" id="coffee-title">Coffee Shop Project</h2>
+        <h3 class="project-highlight" id="coffee-highlight">Highlights</h3>
+        <ul class="project-list" id="coffee-list">
+            <li>Built from scratch</li>
+            <li>Fontawesome Integration</li>
+            <li>Google Font Integration</li>
+        </ul>
+        <img class="project-image" id="coffee-image" src="#" />
+    </section>
 
     <!--About Section-->
-    <section class="about-container">
-        <h2>Let's connect</h2>
-        <p>Curious to see what i've learned or where I am in my journey?<em>Let's connect!</em></p>
+    <section class="grid-container" id="about-section">
+        <h2 id="connect-statement">Let's connect</h2>
+        <p id="connect-subtext">Curious to see what i've learned or where I am in my journey?</p>
         <ul>
             <li>Github</li>
             <li>LinkedIn</li>
@@ -83,14 +76,14 @@
         </ul>
     </section>
 
-    <!--Footer Section-->
-    <section class="footer-container">
-        <a href="#">made by Rogelio</a>
-        <br />
-        <a class="social-icon" href="https://www.linkedin.com/in/mitrerogelio/"></a>
-        <a class="social-icon" href="https://github.com/mitrerogelio"></a>
-        <a class="social-icon" href="https://www.instagram.com/rogeliocodes/"></a>
-    </section>
+<!--Footer Section
+<section class="footer-container">
+    <a href="#">made by Rogelio</a>
+    <br />
+    <a class="social-icon" href="https://www.linkedin.com/in/mitrerogelio/"></a>
+    <a class="social-icon" href="https://github.com/mitrerogelio"></a>
+    <a class="social-icon" href="https://www.instagram.com/rogeliocodes/"></a>
+</section>-->
 
 </body>
 </html>
