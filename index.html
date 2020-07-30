@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RogelioCodes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <span id="color-one">
+    <section class="hero-container">
         <!--Navigation-->    
         <header>
             <nav>
-                <ul>
-                    <li>Projects</li>
-                    <li>About</li>
+                <ul id="nav-links">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
                 <h1>Rogelio Mitre</h1>
                 <button>Contact Me</button>
@@ -20,12 +22,12 @@
         </header>
 
         <!--Hero Section-->
-        <section id="hero-sentence">I am a frontend web developer</section>
-        <section class="hero-section">
+        <section id="hero-sentence">Frontend Web Developer based in Minneapolis.</section>
+        <section class="hero-block">
             <h2>My Mission</h2>
             <p>insert mission here</p> 
         </section>
-        <section class="hero-section">
+        <section class="hero-block">
             <h2>Tools</h2>
             <ul>
                 <li>HTML5</li>
@@ -34,10 +36,61 @@
                 <li>React</li>
             </ul>
         </section>
-    </span>
+    </section>
 
-    <article class="projects">
-      <h2>Custom Flex</h2>  
-    </article>
+    <!--Projects Section-->
+    <section class="projects-container">
+        <article class="project">
+            <h2>Restaurant Project</h2>
+            <h3>Highlights</h3>
+            <ul>
+                <li>Built from scratch</li>
+                <li>Fontawesome Integration</li>
+                <li>Google Font Integration</li>
+            </ul>
+            <img class="project-image" src="#" />
+        </article>
+        <article class="project">
+            <h2>Gym Project</h2>
+            <h3>Highlights</h3>
+            <ul>
+                <li>Built from scratch</li>
+                <li>HTML & CSS</li>
+                <li>Images from Unsplash</li>
+            </ul>
+            <img class="project-image" src="#" />
+        </article>
+        <article class="project">
+            <h2>Cofee Shop Project</h2>
+            <h3>Highlights</h3>
+            <ul>
+                <li>Built from scratch</li>
+                <li>HTML & CSS</li>
+                <li>Images from Unsplash</li>
+            </ul>
+            <img class="project-image" src="#" />
+        </article>
+    </section> 
+
+    <!--About Section-->
+    <section class="about-container">
+        <h2>Let's connect</h2>
+        <p>Curious to see what i've learned or where I am in my journey?<em>Let's connect!</em></p>
+        <ul>
+            <li>Github</li>
+            <li>LinkedIn</li>
+            <li>Instagram</li>
+        </ul>
+    </section>
+
+    <!--Footer Section-->
+    <section class="footer-container">
+        <a href="#">made by Rogelio</a>
+        <br />
+        <a class="social-icon" href="https://www.linkedin.com/in/mitrerogelio/"></a>
+        <a class="social-icon" href="https://github.com/mitrerogelio"></a>
+        <a class="social-icon" href="https://www.instagram.com/rogeliocodes/"></a>
+    </section>
+
 </body>
 </html>

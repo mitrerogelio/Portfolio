@@ -1,1 +1,48 @@
 /* 6 columns, 7 rows */
+
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+    list-style: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    color: black;
+    cursor: pointer;
+}
+
+/* Navigation */
+.hero-container {
+    background-color: rgb(240,142,128);
+    height: 90vh;
+    width: 100%;
+}
+nav {
+    height: 130px;
+    width: 100%;
+    margin: 0px 10px;
+    padding-right: 30px;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-links {
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 40px;
+    letter-spacing: 7px;
+}
