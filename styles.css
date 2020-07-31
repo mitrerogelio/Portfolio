@@ -19,10 +19,11 @@ button {
 }
 
 /* Navigation */
-.hero-container {
+#hero-section {
     background-color: rgb(240,142,128);
-    height: 90vh;
+    height: max-content;
     width: 100%;
+    display: grid;
 }
 nav {
     height: 130px;
