@@ -2,39 +2,61 @@
 
 /* Universal Styles */
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px; 
     list-style: none;
-    color: white;
     font-family: 'Playfair Display', serif;
+    padding-inline-start: 0px;
+    margin: 0px;
+    font-weight: 400;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #e97171;
 }
 a {
     text-decoration: none;
+    color: white;
 }
-
+a:hover {
+    text-decoration: underline;
+}
 button {
-    color: black;
     cursor: pointer;
+    color: #f08e80;
+    background-color: #fff;
+    border-color: #fff;
+    font-size: 16px;
+    padding: 15px 23px;
+}
+#color-one {
+    background-color:#810000;
+    color: white;
+    width: 100%;
+    height: fit-content;
+}
+#color-two {
+background-color: #f5efef;
+ color: black;
+ width: 100%;
+ height: fit-content;
+}
+#color-three {
+    background-color: #ffcb8e;
 }
 
 /* Navigation */
-#hero-section {
-    background-color: rgb(240,142,128);
-    height: max-content;
-    width: 100%;
-    display: grid;
-}
 nav {
     height: 130px;
-    width: 100%;
-    margin: 0px 10px;
-    padding-right: 30px;
+    width: 90%;
     display: flex;
     flex: auto;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 #nav-links {
     font-size: 20px;
@@ -45,5 +67,85 @@ nav {
 }
 h1 {
     font-size: 40px;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
+}
+
+/* Hero */
+#hero-section {
+    width: 70%;
+    display: grid;
+    grid-template: 175px repeat(2, 1fr) /repeat(2, 1fr) ;
+    grid-template-areas: 
+    "sentence sentence"
+    "mission mission-description"
+    "tools tools-description"
+    ;
+    font-size: 30px;
+    grid-row-gap: 5%;
+    color: white;
+    padding: 0px 0px;
+    margin: 30px 0px;
+}
+#hero-sentence {
+    grid-area: sentence;
+    font-size: 50px;
+    font-weight: 400;
+}
+#mission {
+    grid-area: mission;
+}
+#mission-description {
+    grid-area: mission-description;
+}
+#tools {
+    grid-area: tools;
+}
+#tools-description {
+    grid-area: tools-description;
+    font-size: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    flex: auto;
+    justify-content: start;
+    text-align: left;
+}
+div {
+    width: 50%;
+}
+
+/* Projects */
+.grid-container {
+    font-size: 30px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    padding-top: 100px;
+}
+#fitness-project {
+    width: 70%;
+    margin: auto;
+    grid-template-areas: 
+    "project-title project-highlight"
+    "project-image project-list"
+    "project-image project-list"
+    ;
+}
+#fitness-title {
+    grid-area: project-title;
+}
+#fitness-image {
+    grid-area: project-image;
+    width: 500px;
+    height: auto;
+    visibility: hidden;
+}
+#fitness-highlight {
+    grid-area: project-highlight;
+}
+#fitness-list {
+    grid-area: project-list;
+}
+.project-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
