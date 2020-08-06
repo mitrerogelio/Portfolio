@@ -7,6 +7,7 @@
     padding-inline-start: 0px;
     margin: 0px;
     font-weight: 400;
+    grid-gap: 1%;
 }
 body {
     display: flex;
@@ -14,7 +15,7 @@ body {
     flex: auto;
     justify-content: center;
     align-items: center;
-    background-color: #e97171;
+    background-color: #c7b198;
 }
 a {
     text-decoration: none;
@@ -25,26 +26,33 @@ a:hover {
 }
 button {
     cursor: pointer;
-    color: #f08e80;
+    color: #c7b198;
     background-color: #fff;
     border-color: #fff;
     font-size: 16px;
     padding: 15px 23px;
 }
 #color-one {
-    background-color:#810000;
+    background-color:#596e79;
     color: white;
     width: 100%;
     height: fit-content;
 }
 #color-two {
-background-color: #f5efef;
- color: black;
- width: 100%;
- height: fit-content;
+    background-color: #f5efef;
+    color: black;
+    width: 100%;
+    height: fit-content;
 }
 #color-three {
-    background-color: #ffcb8e;
+    color: white;
+    width: 100%;
+    height: fit-content;
+}
+#color-four {
+    width: 100%;
+    background-color:#596e79;
+    color: white;
 }
 
 /* Navigation */
@@ -83,7 +91,6 @@ h1 {
     font-size: 30px;
     grid-row-gap: 5%;
     color: white;
-    padding: 0px 0px;
     margin: 30px 0px;
 }
 #hero-sentence {
@@ -118,34 +125,99 @@ div {
     font-size: 30px;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    padding-top: 100px;
-}
-#fitness-project {
+    padding: 100px 0px;
     width: 70%;
     margin: auto;
-    grid-template-areas: 
-    "project-title project-highlight"
-    "project-image project-list"
-    "project-image project-list"
-    ;
-}
-#fitness-title {
-    grid-area: project-title;
-}
-#fitness-image {
-    grid-area: project-image;
-    width: 500px;
-    height: auto;
-    visibility: hidden;
-}
-#fitness-highlight {
-    grid-area: project-highlight;
-}
-#fitness-list {
-    grid-area: project-list;
 }
 .project-list {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.project-image {
+    width: 500px;
+    height: auto;
+}
+
+/* Fitness Project */
+#fitness-project {
+    grid-template-areas: 
+    "fitness-title fitness-highlight"
+    "fitness-image fitness-list"
+    "fitness-image fitness-list"
+    ;
+}
+#fitness-title {
+    grid-area: fitness-title;
+}
+#fitness-image {
+    grid-area: fitness-image;
+}
+#fitness-highlight {
+    grid-area: fitness-highlight;
+}
+#fitness-list {
+    grid-area: fitness-list;
+}
+
+/* Restaurant Project */
+#restaurant-project {
+    grid-template-areas: 
+    "restaurant-title restaurant-highlight"
+    "restaurant-image restaurant-list"
+    "restaurant-image restaurant-list"
+    ;
+}
+#restaurant-title {
+    grid-area: restaurant-title;
+}
+#restaurant-image {
+    grid-area: restaurant-image;
+}
+#restaurant-highlight {
+    grid-area: restaurant-highlight;
+}
+#restaurant-list {
+    grid-area: restaurant-list;
+}
+
+/* Coffee Shop Project */
+#coffee-project {
+    grid-template-areas: 
+    "coffee-title coffee-highlight"
+    "coffee-image coffee-list"
+    "coffee-image coffee-list"
+    ;
+}
+#coffee-title {
+    grid-area: coffee-title;
+}
+#coffee-image {
+    grid-area: coffee-image;
+}
+#coffee-highlight {
+    grid-area: coffee-highlight;
+}
+#coffee-list {
+    grid-area: coffee-list;
+}
+
+/* About */
+#about-section {
+    height: 300px;
+    color: white;
+    grid-template-areas: 
+    "title title"
+    "cta list"
+    "cta list"
+    ;
+}
+#connect-statement {
+    grid-area: title;
+}
+#connect-subtext {
+    grid-area: cta;
+}
+#about-list {
+    grid-area: list;
 }
