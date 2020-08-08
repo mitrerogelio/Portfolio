@@ -135,8 +135,11 @@ div {
     justify-content: space-evenly;
 }
 .project-image {
-    width: 500px;
+    width: 75%;
+    min-width: 350px;
     height: auto;
+    justify-self: start;
+    align-self: center;
 }
 
 /* Fitness Project */
@@ -202,8 +205,8 @@ div {
     grid-area: coffee-list;
 }
 
-/* About */
-#about-section {
+/* footer */
+#footer-section {
     height: 300px;
     color: white;
     grid-template-areas: 
