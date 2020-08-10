@@ -68,7 +68,7 @@ nav {
 }
 #nav-links {
     font-size: 20px;
-    width: 150px;
+    width: 180px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -76,6 +76,9 @@ nav {
 h1 {
     font-size: 40px;
     letter-spacing: 4px;
+}
+#nav-button-link {
+    color: inherit;
 }
 
 /* Hero */
@@ -126,7 +129,7 @@ div {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     padding: 100px 0px;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 .project-highlight, .project-title {
@@ -136,7 +139,7 @@ div {
 .project-list {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .project-image {
     width: 75%;
@@ -247,11 +250,90 @@ div {
 }
 #about-subtext {
     grid-area: text;
+    font-size: 2rem;
+    line-height: 55px;
 }
 #about-list {
     grid-area: list;
-    justify-self: center;
+    justify-self: end;
 }
 span {
-    font-size: 50px;
+    font-size: 40px;
+    height: fit-content;
+}
+#about-list a {
+    padding: 0px 7px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1100px) {
+    #hero-section {
+        margin: 0px;
+    }
+    .grid-container {
+        height: fit-content;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: auto;
+        justify-content: space-between;
+    }
+    .project-image {
+        width: 100%;
+    }
+    .project-button {
+        margin: 30px 0px;
+        height: fit-content;
+    }
+    .project-list {
+        text-align: center;
+    }
+    #about-list {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 40px;
+    }
+    .project-highlight, .project-title {
+        align-self: center;
+    }
+    #footer-section {
+        height: fit-content;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 670px) {
+    nav {
+        flex-flow: column-reverse nowrap;
+        justify-content: space-between;
+        height: auto;
+    }
+    #hero-section {
+        display: flex;
+        height: fit-content;
+        flex-flow: column nowrap;
+        margin: 0px;
+    }
+    #hero-sentence, #mission-description {
+        padding-bottom: 30px;
+    }
+    #mission, #tools {
+        padding-bottom: 15px;
+    }
+    #tools-description {
+        width: fit-content;
+    }
+    nav button {
+        visibility: hidden;
+    }
+    .grid-container {
+        padding: 50px 0px;
+        height: fit-content;
+    }
+    .project-highlight, li {
+        margin: 5px 0px;
+    }
+    #about-list a {
+        width: unset;
+        padding: 0px 7px;
+    }
 }
