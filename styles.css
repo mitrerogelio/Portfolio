@@ -335,6 +335,9 @@ span {
         padding: 50px 0px;
         height: fit-content;
     }
+    .project-image {
+        margin: auto;
+    }
     .project-highlight, li {
         margin: 5px 0px;
     }
