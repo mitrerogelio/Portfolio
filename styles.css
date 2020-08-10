@@ -289,11 +289,17 @@ span {
     }
     #about-list {
         display: flex;
-        flex-flow: row wrap;
-        margin-top: 40px;
+        flex-flow: row nowrap;
+        width: 40%;
+        margin: auto;
+        justify-content: center;
+        padding-top: 50px;
     }
     .project-highlight, .project-title {
         align-self: center;
+    }
+    #about-subtext {
+        text-align: center;
     }
     #footer-section {
         height: fit-content;
