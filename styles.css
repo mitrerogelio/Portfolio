@@ -343,6 +343,9 @@ span {
     .project-highlight, li {
         margin: 5px 0px;
     }
+    #footer-title {
+        margin: 0px 10px;
+    }
     #about-list a {
         width: unset;
         padding: 0px 7px;
