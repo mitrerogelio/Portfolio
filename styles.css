@@ -345,6 +345,7 @@ span {
     }
     #footer-title {
         margin: 0px 10px;
+        text-align: center;
     }
     #about-list a {
         width: unset;
