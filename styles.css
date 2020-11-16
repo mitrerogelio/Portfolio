@@ -1,354 +1,278 @@
-/* 6 columns, 7 rows */
-
-/* Universal Styles */
+/* Universal */
 * {
-    list-style: none;
-    font-family: 'Playfair Display', serif;
-    padding-inline-start: 0px;
-    margin: 0px;
-    font-weight: 400;
-    grid-gap: 1%;
-}
-body {
-    display: flex;
-    flex-flow: column nowrap;
-    flex: auto;
-    justify-content: center;
-    align-items: center;
-    background-color: #c7b198;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    margin: unset;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 a {
-    text-decoration: none;
-    color: white;
-}
-a:hover {
-    text-decoration: underline;
-}
-button {
-    cursor: pointer;
-    color: #c7b198;
-    background-color: #fff;
-    border-color: #fff;
-    font-size: 16px;
-    padding: 15px 23px;
-}
-#color-one {
-    background-color:#596e79;
-    color: white;
-    width: 100%;
-    height: fit-content;
-}
-#color-two {
-    background-color: #f5efef;
-    color: black;
-    width: 100%;
-    height: fit-content;
-}
-#color-three {
-    color: white;
-    width: 100%;
-    height: fit-content;
-}
-#color-four {
-    width: 100%;
-    background-color:#596e79;
-    color: white;
-}
-
-/* Navigation */
-nav {
-    height: 130px;
-    width: 90%;
-    display: flex;
-    flex: auto;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-#nav-links {
-    font-size: 20px;
-    width: 180px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-h1 {
-    font-size: 40px;
-    letter-spacing: 4px;
-}
-#nav-button-link {
     color: inherit;
 }
-
-/* Hero */
-#hero-section {
-    width: 70%;
-    display: grid;
-    grid-template: 175px repeat(2, 1fr) /repeat(2, 1fr) ;
-    grid-template-areas: 
-    "sentence sentence"
-    "mission mission-description"
-    "tools tools-description"
-    ;
-    font-size: 30px;
-    grid-row-gap: 5%;
-    color: white;
-    margin: 30px 0px;
+ul,li, a {
+    list-style: none;
+    text-decoration: none;
 }
-#hero-sentence {
-    grid-area: sentence;
-    font-size: 50px;
-    font-weight: 400;
-}
-#mission {
-    grid-area: mission;
-}
-#mission-description {
-    grid-area: mission-description;
-}
-#tools {
-    grid-area: tools;
-}
-#tools-description {
-    grid-area: tools-description;
-    font-size: 25px;
-    display: flex;
-    flex-flow: row wrap;
-    flex: auto;
-    justify-content: start;
-    text-align: left;
-}
-div {
-    width: 50%;
+body {
+    background-color: rgb(236, 234, 234);
 }
 
-/* Projects */
-.grid-container {
-    font-size: 30px;
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    padding: 100px 0px;
-    width: 80%;
-    margin: auto;
-}
-.project-highlight, .project-title {
-    align-self: end;
-    padding-bottom: 20px;
-}
-.project-list {
+/* Header Section */
+header {
+    height: 1000px;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-}
-.project-image {
-    width: 75%;
-    min-width: 350px;
-    height: auto;
-    justify-self: start;
-    align-self: center;
-}
-.project-button {
-    font-size: 24px;
-    background-color: gray;
-    color: black;
-    height: 35%;
-    width: max-content;
-    display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    border-radius: 12px;
+    background-image: url(hero-background.jpg);
+    background-size: cover;
+}
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex: none;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.877);
+    opacity: 0.8;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+nav ul, footer > .footer-nav {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: unset;
+}
+ul,li {
+    list-style: none;
+    text-decoration: none;
+}
+#title {
+    font-size: 3rem;
+}
+#nav-links {
+    width: 30%;
+}
+#nav-social-icons {
+    width: 15%;
+}
+.fab {
+    font-size: 2.5rem;
+}
+h2.mission {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+#arrow {
+    position: relative;
+    font-size: 4rem;
+    background: none;
+    color: white;
     border: none;
 }
 
-/* Fitness Project */
-#fitness-project {
-    grid-template-areas: 
-    "fitness-title fitness-highlight"
-    "fitness-image fitness-list"
-    "fitness-button fitness-list"
-    ;
+/* Project Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#fitness-title {
-    grid-area: fitness-title;
+main > h1 {
+    padding: 30px 0px;
 }
-#fitness-image {
-    grid-area: fitness-image;
+#project-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex: none;
 }
-#fitness-highlight {
-    grid-area: fitness-highlight;
+.project-card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px 0px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 6%;
 }
-#fitness-list {
-    grid-area: fitness-list;
+.image {
+    width: 500px;
+    height: 500px;
+    min-width: 100px;
+    min-height: 100px;
 }
-#fitness-button {
-    grid-area: fitness-button;
-}
-
-/* Restaurant Project */
-#restaurant-project {
-    grid-template-areas: 
-    "restaurant-title restaurant-highlight"
-    "restaurant-image restaurant-list"
-    "restaurant-button restaurant-list"
-    ;
-}
-#restaurant-title {
-    grid-area: restaurant-title;
-}
-#restaurant-image {
-    grid-area: restaurant-image;
-}
-#restaurant-highlight {
-    grid-area: restaurant-highlight;
-}
-#restaurant-list {
-    grid-area: restaurant-list;
-}
-#restaurant-button {
-    grid-area: restaurant-button;
-}
-
-/* Coffee Shop Project */
-#coffee-project {
-    grid-template-areas: 
-    "coffee-title coffee-highlight"
-    "coffee-image coffee-list"
-    "coffee-button coffee-list"
-    ;
-}
-#coffee-title {
-    grid-area: coffee-title;
-}
-#coffee-image {
-    grid-area: coffee-image;
-}
-#coffee-highlight {
-    grid-area: coffee-highlight;
-}
-#coffee-list {
-    grid-area: coffee-list;
-}
-#coffee-button {
-    grid-area: coffee-button;
-}
-
-/* footer */
-#footer-section {
-    height: auto;
-    color: white;
-    grid-template-areas: 
-    "title title"
-    "text list"
-    "text list"
-    ;
-}
-#footer-title {
-    grid-area: title;
-    font-size: 40px;
-}
-#about-subtext {
-    grid-area: text;
+h4.title {
     font-size: 2rem;
-    line-height: 55px;
+    margin-top: 5px;
 }
-#about-list {
-    grid-area: list;
-    justify-self: end;
+.project-description {
+    padding: 30px 0px;
+    font-size: 1.45rem;
 }
-span {
-    font-size: 40px;
-    height: fit-content;
+.button {
+    font-size: 22px;
+    padding: 7px 16px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#html {
+    background-image: url(./html.png);
+}
+#css {
+    background-image: url(./css.png);
+}
+#js {
+    background-image: url(./js.png);
+}
+
+/* About Section */
+#about {
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 50%;
+    min-width: 500px;
+    padding-bottom: 20px;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: auto;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+.about-picture {
+    height: auto;
     width: 100%;
 }
-#about-list a {
-    padding: 0px 7px;
+.about-div > h4 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+.about-div {
+    font-size: 1.8rem;
+    width: 80%;
+}
+#about-paragraph {
+    padding: 20px 0px;
+}
+#about-list {
+    padding: 35px 0px;
 }
 
-/* Tablet */
-@media screen and (max-width: 1100px) {
-    #hero-section {
-        margin: 0px;
-    }
-    .grid-container {
-        height: fit-content;
-        display: flex;
-        flex-flow: column nowrap;
-        flex: auto;
-        justify-content: space-between;
-    }
-    .project-image {
-        width: 100%;
-    }
-    .project-button {
-        margin: 30px 0px;
-        height: fit-content;
-    }
-    .project-list {
-        text-align: center;
-    }
-    #about-list {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 40%;
-        margin: auto;
-        justify-content: center;
-        padding-top: 50px;
-    }
-    .project-highlight, .project-title {
-        align-self: center;
-    }
-    #about-subtext {
-        text-align: center;
-    }
-    #footer-section {
-        height: fit-content;
-    }
+/* Footer */
+footer {
+    font-size: 1.4rem;
+    margin-top: 50px;
+    background-color: rgb(56,56,59);
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+footer article {
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+footer article > h5 {
+    font-size: 2rem;
+}
+ul li a.footer {
+    font-size: 4rem;
+    color: lightgray;
+}
+.footer-list {
+    color: lightgray;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 250px;
+    padding: unset;
+}
+#footer-nav {
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+#footer-nav > li a {
+    color: inherit;
+}
+footer article > p {
+    text-align: center;
+    margin-top: 100px;
 }
 
 /* Mobile */
-@media screen and (max-width: 670px) {
+
+@media (max-width: 860px) {
+    /* Header */
+    * {
+        text-align: center;
+        font-size: 16px;
+    }
+    header {
+        height: 600px;
+    }
     nav {
-        flex-flow: column-reverse nowrap;
-        justify-content: space-between;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+    #nav-social-icons {
+        display: none;
+    }
+    #nav-links {
+        width: 100%;
+    }
+    #title {
+        font-size: 2.5rem;
+    }
+    h2.mission {
+        font-size: 2rem;
+    }
+
+    /* Projects */
+    main h1 {
+        font-size: 25px;
+    }
+    .project-card {
+        margin: 30px 10px;
+        border-radius: 0%;
         height: auto;
     }
-    #hero-section {
-        display: flex;
-        height: fit-content;
-        flex-flow: column nowrap;
-        margin: 0px;
+
+    /* About */
+    #about {
+        font-size: 12px;
     }
-    #hero-sentence, #mission-description {
-        padding-bottom: 30px;
-    }
-    #mission, #tools {
-        padding-bottom: 15px;
-    }
-    #tools-description {
-        width: fit-content;
-    }
-    nav button {
-        visibility: hidden;
-    }
-    .grid-container {
-        padding: 50px 0px;
-        height: fit-content;
-        width: inherit;
-    }
-    .project-image {
-        margin: auto;
-    }
-    .project-highlight, li {
-        margin: 5px 0px;
-    }
-    #footer-title {
-        margin: 0px 10px;
-        text-align: center;
-    }
-    #about-list a {
-        width: unset;
-        padding: 0px 7px;
+    .about-div {
+        width: 70%;
     }
 }
