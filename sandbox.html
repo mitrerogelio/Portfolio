@@ -61,14 +61,17 @@
 
         <!-- Footer -->
         <footer>
-            <p>How can I help?</p>
+            <h2>How can I help?</h2>
             <form class="contact" action="index.html" method="post">
-                <input type="text" name="first-name" placeholder="John">
-                <input type="text" name="last-name" placeholder="Doe" id="">
-                <input type="email" name="email" id="">
-                <input type="text" name="subject" placeholder="Subject" id="">
-                <textarea name="message" placeholder="Let's work together!" id="" cols="80" rows="8"></textarea>
-                <button type="submit" name="submit">Send 🚀</button>
+                <label for="user-name">Name</label>
+                <input type="text" name="name" id="user-name" placeholder="Please enter your name">
+
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="email" placeholder="Please enter your email">
+
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="message" placeholder="Let's work together!" cols="80" rows="8"></textarea>
+                <button type="submit" name="submit">Submit ></button>
             </form>
             <p>© 2020 Mr. Bean Coffee Company. All rights reserved.</p>
         </footer>
