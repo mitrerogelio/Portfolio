@@ -270,13 +270,11 @@
     }
     footer > h2 {
         font-size: 2.25rem;
-        grid-area: header;
     }
     form {
         align-self: center;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(7, 50px);
         grid-template-areas: 
         "name"
         "name-in"
@@ -288,13 +286,15 @@
         ;
     }
     input, textarea {
-        width: 50%;
+        max-width: 800px;
         border-radius: 4px;
         padding: 2%;
         text-align: left;
     }
     label {
         text-align: left;
+        font-size: 1.15rem;
+        margin: 20px 1px;
     }
     #n-label {
         grid-area: name;
@@ -316,6 +316,10 @@
     }
     #submit {
         grid-area: button;
+        width: 100%;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-top: 20px;
     }
 
         
