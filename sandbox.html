@@ -28,29 +28,44 @@
         </nav>
         <nav class="header-nav" id="nav-two">
             <span class="fas fa-solid fa-calendar" id="header-pin"><a id="nav-link" href="#">Schedule a consultation</a></span>
-            <button class="button header-button" id="yang-button">See GitHub</button>
-            <button class="button header-button" id="yin-button">Book Today</button>
+            <button class="button header-button">See GitHub</button>
+            <button class="button header-button" id="book-button">Book Today</button>
         </nav>
     </header>
-
-    <!-- Main -->
 
     <section id="hero">
         <h1 class="hero-text" id="hero-maintext">Turn your ideas into reality on the web</h1>
         <h3 class="hero-text" id="hero-subtext">Combining cutting-edge technology with business know-how to create lead-generating sites</h3>
-        <button class="hero-text orange-button">Book a consultation</button>
+        <button class="hero-text button" id="hero-button">Book a consultation ></button>
 
     </section>
     <main>
-        <section id="sentence">
-            <h3>My goal is to facilitate the process for small-business owners to get on the web.</h3>
-        </section>
+        <!-- About Section? -->
+
+        <!-- Portfolio (Projects) -->
         <section id="projects-section">
-            <p>projects go here lol</p>
+            <h2>Recent Work</h2>
+            <p>My goal is to facilitate the process for small-business owners to get on the web.</p>
+            <section id="projects-container">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" />
+                    <h3 class="project-heading">Alymade Cookie Co.</h3>
+                    <p class="project-description">Custom site to showcase products and generate leads for mobile orders.</p>
+                    <button class="button">View site ></button>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+                    <h3 class="project-heading">Ray Williams Therapy</h3>
+                    <p class="project-description">Modern and accesible WordPress CMS site for client to make updates internally.</p>
+                    <button class="button">View site ></button>
+                </article>
+            </section>
         </section>
         </main>
-        <img id="bottom-image" src="https://images.unsplash.com/photo-1585168121124-bc4c43c0251b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+        
+        <div id="msp"></div>
 
+    </main>
     <!-- Footer -->
     <footer>
         <h2>How can I help?</h2>
@@ -63,7 +78,7 @@
 
             <label for="user-message" id="m-label">Message</label>
             <textarea id="user-message" name="message" placeholder="Let's work together!" cols="80" rows="8"></textarea>
-            <button type="submit" name="submit" id="submit">Submit ></button>
+            <button type="submit" name="submit" class="button" id="submit">Submit ></button>
         </form>
         <p>© rogeliocodes. All rights reserved.</p>
     </footer>

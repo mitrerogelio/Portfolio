@@ -22,11 +22,11 @@
         line-height: 35px;
     }
     .button {
-        background-color: inherit;
-        border: 1px solid black;
-        border-radius: 50px;
+        color: white;
+        background-color: #3F8E00;
         padding: 7px 16px;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        border: none;
     }
     .button:hover {
         background-color: black;
@@ -57,7 +57,7 @@
         font-size: 1.25rem;
     }
     h1 {
-        font-size: 30px;
+        font-size: 2rem;
         padding: 0rem .5rem;
     }
     #header-pin {
@@ -65,23 +65,16 @@
     }
     .header-button {
         font-size: inherit;
+        background-color: gainsboro;
         color: black;
+        border-radius: 15px;
     }
-    #yang-button {
-        background-color: white;
-        color: black;
-    }
-    #yang-button:hover {
-        background-color: grey;
+    #book-button {
+        background-color: darkslategrey;
         color: white;
     }
-    #yin-button {
-        background-color: black;
-        color: white;
-    }
-    #yin-button:hover {
-        background-color: white;
-        color: black;
+    #book-button:hover {
+        background-color: #3F8E00;
     }
     #nav-link {
         padding: 0px 13px;
@@ -181,57 +174,77 @@
     }
     .hero-text {
         color: inherit;
-        margin-top: 0px;
         margin-left: 70px;
     }
     #hero-maintext {
         font-size: 50px;
         margin-bottom: 5px;
-    }
-    .orange-button {
-        background-color: rgb(241,166,56);
-        height: 60px;
-        padding: 1em 1.67em;
-        font-size: inherit;
-        color: black;
-        letter-spacing: 1px;
-        font-weight: bolder;
+        padding-left: 0;
     }
     #hero-subtext {
         font-size: 1.20rem;
-        width: 70%;
     }
-
-/* Quote */
-    #sentence {
-        display: flex;
-        flex-direction: row;
-        margin: 8rem 5rem;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-    }
-    h3 {
-        display: flex;
-        text-align: center;
-        font-size: 3rem;
-        line-height: 4rem;
-        font-weight: lighter;
+    #hero-button {
+        font-size: 1.45rem;
+        padding: 10px 25px;
+        border-radius: 5px;
+        margin-top: 15px;
     }
 
 /* Projects */
     #projects-section {
-        height: 600px;
-        background-color: aquamarine;
+        background-color: white;
         color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    #projects-section > h2 {
+        font-size: 2.25rem;
+        margin: 10px;
+    }
+    #projects-section > p {
+        color: inherit;
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+    }
+    .project-card {
+        margin: auto 40px;
+        width: 500px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .project-card > img {
+        height: 300px;
+        max-width: 450px;
+        border-radius: 10px;
+    }
+    .project-heading {
+        height: 30px;
+        font-size: 24px;
+        color: black;
+        margin-top: 25px;
+    }
+    .project-description {
+        color: #9C9C9C;
+        text-align: left;
+        margin: 10px 0px;
+    }
+    .project-card > .button {
+        margin: 10px 0px;
     }
 
 /* Bottom Image */
-    #bottom-image {
+    #msp {
         width: 100%;
+        background-image: url("https://images.unsplash.com/photo-1585168121124-bc4c43c0251b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+        background-size: cover;
         object-fit: cover;
         object-position: top;
-        max-height: 600px;
+        height: 500px;
     }
 /* Footer */
     footer {
@@ -293,18 +306,13 @@
         grid-area: button;
         width: 100%;
         height: 50px;
-        font-size: 1.25rem;
-        margin-top: 20px;
-        color: white;
-        background-color: #3F8E00;
+        margin: 15px 0px;
     }
 
 /* Media Query */    
     @media (max-width: 800px) {
-        #grid-container {
-            display: flex;
-            flex-direction: column;
-            flex: auto;
+        #hero {
+            justify-items: center;
         }
         #nav-one {
             justify-content: center;
@@ -324,7 +332,6 @@
             justify-content: center;
             align-items: center;
             flex: auto;
-            margin-top: 30px;
             padding: 15px 5px;
         }
         .featured-image {
