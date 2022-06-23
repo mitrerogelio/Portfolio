@@ -1,6 +1,6 @@
 /* Universal */
     * { 
-        font-family: sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 16px;
         text-align: center;
@@ -223,19 +223,18 @@
     }
     .project-tag {
         font-size: .75rem;
+        font-weight: 800;
         background-color: linen;
-        color: black;
+        color: white;
         padding: 7px 25px;
         border-radius: 15px;
         margin: 15px 0px;
     }
     #custom-site-tag, #aly-btn {
-        background-color: #FFF6E9;
-        color: #FFA217;
+        background-color: #9bba66;
     }
     #wordpress-tag, #rwt-btn {
-        background-color: #D0E6FF;
-        color: #000AFF;
+        background-color: rgb(81, 164, 228);
     }
     .project-card > img {
         height: 300px;
@@ -246,12 +245,12 @@
         height: 30px;
         font-size: 24px;
         color: black;
-        margin: 10px 0px;
+        margin: 15px 0px 0px 0px;
     }
     .project-description {
         color: #9C9C9C;
         text-align: left;
-        margin: 7px 0px;
+        margin: 5px 0px;
     }
     .project-card > .button {
         font-size: .9rem;
