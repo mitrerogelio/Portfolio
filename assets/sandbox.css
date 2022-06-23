@@ -258,6 +258,48 @@
         font-weight: bold;
     }
 
+/* About Section */
+    #about-section {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: gray;
+        padding: 5%;
+        text-align: left;
+    }
+    #about-text {
+        background-color: blanchedalmond;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 70%;
+    }
+    .sm-spacing {
+        margin: 10px auto 10px 0px;
+    }
+    #about-heading {
+        font-size: 4rem;
+        text-align: left;
+        margin: 0px;
+    }
+    #about-subheading {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: inherit;
+        margin: 0px;
+    }
+    #about-text > p {
+        color: inherit;
+        font-size: 1.1rem;
+        text-align: left;
+        line-height: 500;
+        line-height: 2rem;
+    }
+    #about-image {
+        width: 30%;
+        height: auto;
+    }
+    
 /* Bottom Image */
     #msp {
         width: 100%;
