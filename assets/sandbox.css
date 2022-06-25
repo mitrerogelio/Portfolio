@@ -30,7 +30,8 @@
     }
     .button {
         color: white;
-        background-color: #9bba66;        padding: 7px 16px;
+        background-color: #9bba66;
+        padding: 7px 16px;
         font-size: 1.25rem;
         border: none;
     }
@@ -40,7 +41,6 @@
     }
 /* Nav */
     header {
-        height: max-content;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -69,7 +69,8 @@
         border-radius: 15px;
     }
     #book-button {
-        background-color: #9bba66;        color: white;
+        background-color: #9bba66;
+        color: white;
     }
     #book-button:hover {
         background-color: black;
@@ -81,6 +82,7 @@
     }
     #nav-two {
         justify-content: space-evenly;
+        font-size: 1vw;
     }
     .navbar-links ul {
         display: flex;
@@ -156,6 +158,24 @@
                 width: 100%;
                 font-size: 22px;
             }
+            h1#hero-maintext {
+                width: 90%;
+                font-size: 7vw;
+            }
+            h3#hero-subtext {
+                width: 50%;
+                font-size: 2vw;
+            }
+            h2#about-heading {
+                font-size: 3vw;
+            }
+            h3#about-subheading {
+                font-size: 2vw;
+            }
+            article#about-text > p {
+                font-size: 1rem;
+                line-height: initial;
+            }
         }
 
 /* Hero */
@@ -177,6 +197,7 @@
     }
     #hero-maintext {
         font-size: 4rem;
+        text-align: left;
         margin-bottom: 5px;
         padding-left: 0;
     }
@@ -239,6 +260,15 @@
         margin: 10px 0px;
         font-weight: bold;
     }
+    
+/* Middle Image */
+#decor {
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1586244346603-b97b4fdb87e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
 
 /* About Section */
     #about-section {
@@ -249,6 +279,7 @@
         text-align: left;
     }
     #about-text {
+        text-align: inherit;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
@@ -277,18 +308,12 @@
         width: 60%;
     }
     #about-image {
+        min-width: 500px;
+        max-width: 50%;
         width: 35%;
-        height: auto;
+        margin: auto;
     }
     
-/* Middle Image */
-    #decor {
-        width: 100%;
-        background-image: url("https://images.unsplash.com/photo-1586244346603-b97b4fdb87e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-    }
 /* Footer */
     footer {
         background-image: url("img/footer-overlay.png");
@@ -368,26 +393,20 @@
             font-size: 25px;
             margin-right: 20px;
         }
-        #covid-message {
-            margin-top: 20px;
-        }
-        .featured-container, .ad-container, footer, aside {
-            display: flex;
-            flex-flow: column nowrap;
+        #about-section {
+            padding: 1%;
+            flex-flow: column-reverse wrap;
             justify-content: center;
             align-items: center;
-            flex: auto;
-            padding: 15px 5px;
         }
-        .featured-image {
-            height: 50%;
-            width: 100%;
-            padding: 10px 0px;
+        h2#about-heading {
+            font-size: 4vw;
         }
-        aside {
-            padding-top: 125px;
+        h3#about-subheading {
+            font-size: 3vw;
         }
-        .end-list {
-            padding-top: 150px;
+        article#about-text > p {
+            font-size: 2vw;
+            line-height: initial;
         }
     }
