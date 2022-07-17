@@ -172,7 +172,7 @@
     }
     .project-card {
         margin: auto 40px;
-        width: 500px;
+        max-width: 500px;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
@@ -215,6 +215,7 @@
         flex-flow: row nowrap;
         justify-content: center;
         padding: 5%;
+        margin: 2% auto;
         text-align: left;
     }
     #about-text {
@@ -302,7 +303,7 @@
         #nav-one {
             width: 100%;
             flex-direction: column;
-            margin-bottom: 30px;
+            margin-bottom: 1%;
         }
         .toggle {
             display: flex;
