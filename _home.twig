@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RogelioCodes 🚀</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09aa9f4f86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="header-nav" id="nav-one">
+            <h1>Rogelio Mitre</h1>
+            <a href="#" class="toggle">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="header-nav" id="nav-two">
+            <span class="fas fa-solid fa-calendar" id="header-pin"><a id="nav-link" href="#footer">Schedule a consultation</a></span>
+            <a href="https://github.com/mitrerogelio" target="_blank"><button class="button header-button">See GitHub</button></a>
+            <a href="#footer"><button class="button header-button" id="book-button">Book Today</button></a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1 class="hero-text" id="hero-maintext">Turn your ideas into reality on the web</h1>
+        <h3 class="hero-text" id="hero-subtext">Combining cutting-edge technology with business know-how to create lead-generating sites</h3>
+        <a href="#footer"><button class="hero-text button" id="hero-button">Book a consultation ></button></a>
+    </section>
+    <main>
+
+        <!-- Portfolio (Projects) -->
+        <section id="projects-section">
+            <h2>Recent Work</h2>
+            <p>My goal is to facilitate the process for small-business owners to get on the web.</p>
+            <section id="projects-container">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+                    <h3 class="project-heading">Craft CMS Project</h3>
+                    <p class="project-description">I am currently working on a project for a client with a car detailing business using craft cms to provide both a modern look and feel as well as accessible content management.<br />
+                    <strong>Tools: Craft CMS, HTML + CSS, PHP</strong></p>
+                    <button class="button" id="aly-btn"><a class="link" href="https://craftcms.com/" target="_blank" >Learn more ></a></button>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+                    <h3 class="project-heading">Ray Williams Therapy</h3>
+                    <p class="project-description">For this project, the client needed a website they could easily access to make updates and handle the site maintenance internally. We worked to design a logo and branding for their business.
+                    <strong>Tools: WordPress, Elementor, GoDaddy</strong></p>
+                    <button class="button" id="rwt-btn"><a class="link" href="https://raywilliamstherapy.com/" target="_blank" >View site ></a></button>
+                </article>
+            </section>
+        </section>
+
+        <div id="decor"></div>
+        
+        <!-- About Section? -->
+        <section id="about-section">
+            <article id="about-text">
+                <h2 class="sm-spacing" id="about-heading">Rogelio Mitre</h2>
+                <h3 class="sm-spacing" id="about-subheading">Web Developer based in Minneapolis</h3>
+                <p class="sm-spacing">I love helping small business succeed by generating a strong online presence. 
+                Whether it's spinning up a WordPress site, or tailoring a custom-made website to meet your particular business needs, I'm here to help.</p>
+            </article>
+            <img id="about-image" alt="Rogelio Mitre Headshot" src="assets/img/rogeliocodes-laptop-setup-flipped.jpg" />
+        </section>
+
+        </main>
+
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>How can I help?</h2>
+        <form class="contact" action="index.html" method="post">
+            <label for="user-name" id="n-label">Name</label>
+            <input type="text" name="name" id="user-name" placeholder="Please enter your name">
+
+            <label for="user-email" id="e-label">Email</label>
+            <input type="email" id="user-email" name="email" placeholder="Please enter your email">
+
+            <label for="user-message" id="m-label">Message</label>
+            <textarea id="user-message" name="message" placeholder="Let's work together!" cols="80" rows="8"></textarea>
+            <button type="submit" name="submit" class="button" id="submit">Submit ></button>
+        </form>
+        <p>© rogeliocodes. All rights reserved.</p>
+    </footer>
+<script type="text/javascript" src="sandbox.js"></script>
+</body>
+</html> 
