@@ -61,9 +61,19 @@
     flex-direction: column;
     justify-content: center;
 }
-#hero-articles > h3 {
-    height: 25%;
-}
 .hero-listing {
-    
+    height: fit-content;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: solid 3px white;
+    padding-bottom: 30px;
+}
+.hero-listing > h4 {
+    text-align: left;
+}
+.hero-listing > p {
+    font-size: .75rem;
+    font-weight: bold;
 }

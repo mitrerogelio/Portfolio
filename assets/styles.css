@@ -82,7 +82,7 @@
     }
     #nav-two {
         justify-content: space-evenly;
-        font-size: 1vw;
+        font-size: .8rem;
     }
     .navbar-links ul {
         display: flex;
@@ -106,11 +106,6 @@
         width: 100%;
         background-color: black;
         border-radius: 10px;   
-    }
-    .responsive-links {
-        display: none;
-        margin: 0;
-        padding: 0;
     }
     .link a {
         display: block;
