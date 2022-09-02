@@ -44,6 +44,47 @@
     font-weight: bold;
 }
 
+section#recent-posts {
+    height: 400px;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+}
+article.blog-listing {
+    background-color: lightgray;
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin: auto 30px;
+}
+.blog-image {
+    max-width: 90%;
+}
+.blog-title {
+    font-size: 1.25rem;
+}
+.blog-listing > p {
+    color: inherit;
+    width: 60%;
+    margin: auto;
+}
+
 section#inspiration {
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+#inspiration > h4 {
+    text-align: left;
+    font-size: 2rem;
+    margin-right: 70%;
+}
+#inspiration > h3 {
+    font-size: 7rem;
+}
+#inspiration > p {
+    color: black;
 }
