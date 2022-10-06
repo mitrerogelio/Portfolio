@@ -26,6 +26,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
+}
+.post-title {
+    text-align: left;
 }
 .hero-listing {
     display: flex;
@@ -46,6 +50,7 @@
 
 section#recent-posts {
     height: 400px;
+    margin: 50px auto;
     padding: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,6 +80,7 @@ section#inspiration {
     align-items: center;
     justify-content: center;
     margin: 5%;
+    margin: 50px auto;
 }
 #inspiration > h4 {
     text-align: left;
