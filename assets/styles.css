@@ -82,7 +82,7 @@
     }
     #nav-two {
         justify-content: space-evenly;
-        font-size: .8rem;
+        font-size: .75rem;
     }
     .navbar-links ul {
         display: flex;
