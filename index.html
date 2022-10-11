@@ -3,86 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogelio Mitre</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Rogelio Mitre - Home 🏠</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/09aa9f4f86.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="top">
-            <nav>
-                <h1 id="title">rogelio mitre</h1>
-                <ul id="nav-links">
-                    <li class="nav-item"><a href="#">home</a></li>
-                    <li class="nav-item"><a href="#about">about</a></li>
-                    <li class="nav-item"><a href="mailto:rogelio.mitre@outlook.com">contact</a></li>
+    <!-- Navigation -->
+    <header>
+        <nav class="header-nav" id="nav-one">
+            <h1><a href="/index.html">Rogelio Mitre</a></h1>
+            <a href="#" class="toggle">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
-                <ul id="nav-social-icons">
-                    <li class="social-icon"><a target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/mitrerogelio/"></a></li>
-                    <li class="social-icon"><a target="_blank" class="fab fa-github-square" href="https://github.com/mitrerogelio"></a></li>
-                    <li class="social-icon"><a target="_blank" class="fab fa-instagram-square" href="https://www.instagram.com/rogeliocodes/"></a></li>
-                </ul>
-            </nav>
-            <h2 class="mission">Frontend Web Developer based in Minneapolis</h2>
-     </header>
+            </div>
+        </nav>
+        <nav class="header-nav" id="nav-two">
+            <span class="fas fa-regular fa-envelope" id="header-pin"><a id="nav-link" href="#footer">Send an email</a></span>
+            <a href="https://github.com/mitrerogelio" target="_blank"><button class="button header-button">See GitHub</button></a>
+            <a href="https://www.linkedin.com/in/mitrerogelio/" target="_blank"><button class="button header-button" id="book-button">See LinkedIn</button></a>
+        </nav>
+    </header>
 
+    <section class="hero" role="img" aria-label="Developer on computer - Jefferson Santos | Unsplash">
+        <h1 class="hero-text" id="hero-maintext">Turn your ideas into reality on the web</h1>
+        <h3 class="hero-text" id="hero-subtext">I combine cutting-edge technology with business acumen to create effective web applications</h3>
+        <!-- <a href="#footer"><button class="hero-text button" id="hero-button">Let's talk web development ></button></a> -->
+    </section>
     <main>
-        <h1>my recent work</h1>
-        <section id="project-section">
-            <article class="project-card">
-                <img class="image" id="html" />
-                <h4 class="title">Alymade Cookie Co.</h4>
-                <p class="project-description">fully responsive custom-made site for client</p>
-                <a target="_blank" href="https://alymadecookieco.com/"><button class="button">See Site</button></a>
-            </article>
-            <article class="project-card">
-                <img class="image" id="css" />
-                <h4 class="title">Ray Williams Therapy</h4>
-                <p class="project-description">Wordpress Site with blog and a form</p>
-                <a target="_blank" href="https://raywilliamstherapy.com/"><button class="button">See Site</button></a>
-            </article>
-            <article class="project-card">
-                <img class="image" id="js" />
-                <h4 class="title">Mr. Bean Coffee Co.</h4>
-                <p class="project-description">sleek and simple site utilizing CSS grid</p>
-                <a target="_blank" href="https://mitrerogelio.github.io/MrBean-CoffeeCo/"><button class="button">See Project</button></a>
+
+        <!-- Portfolio (Projects) -->
+        <section id="projects-section">
+            <h2>Recent Projects</h2>
+            <p id="projects-subheading">Whether it's a CMS-site for easy site maintenance or custom firmware, I aim to apply the best solution for the problem at hand.</p>
+            <section id="projects-container">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1610878785620-3ab2d3a2ae7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80" alt="STM32F0 Discovery Microcontroller Development Board - Vishnu Mohanan | Unsplash" />
+                    <h3 class="project-heading">HomeBurrow Automation</h3>
+                    <p class="project-description">HomeBurrow is an open-source project built for end-users who wish to take full control of their home and their privacy. Users can experience an expanding ecosystem of devices independent of third-party control.<br />
+                    <strong>Tools: TypeScript, React, Next.js, GoLang, Arduino</strong></p>
+                    <button class="button"><a class="link" href="https://github.com/Linkinlog/HomeBurrow" target="_blank" >Learn more ></a></button>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Laptop with JavaScript code on screen - Clément Hélardot | Unsplash" />
+                    <h3 class="project-heading">Ray Williams Therapy</h3>
+                    <p class="project-description">A project for a small-business powered by WordPress CMS where the client can access a dashboard and make updates to handle their site maintenance internally. I also designed a logo for their business.<br /> 
+                    <strong>Tools: WordPress, Elementor, GoDaddy</strong></p>
+                    <button class="button"><a class="link" href="https://raywilliamstherapy.com/" target="_blank" >View site ></a></button>
+                </article>
+            </section>
+        </section>
+
+        <div id="decor" role="img" aria-label="MacBook Pro Desktop Scene - Nathan da Silva | Unsplash"></div>
+        
+        <!-- About Section -->
+        <section id="about-section">
+            <img id="about-image" alt="Rogelio Mitre, Full Stack Developer" src="assets/img/rogeliocodes-laptop-setup-flipped.jpg" />
+            <article id="about-text">
+                <h2 class="sm-spacing" id="about-heading">Rogelio Mitre</h2>
+                <h3 class="sm-spacing" id="about-subheading">Fullstack Developer based in Minneapolis</h3>
+                <p class="sm-spacing">I began my career in web development building frontends using HTML, CSS, and JavaScript as well as social media marketing and design. 
+                The growing capabilities of what users could do on the web always fascinated me. This is why I now seek to leverage the ever-expanding JavaScript ecosystem to build full-scale applications on the web using scalable tools such as: <strong>React, TypeScript, Next.js, and TailwindCSS</strong>.</p>
             </article>
         </section>
 
-        <section id="about">
-            <article class="card">
-                <img class="about-picture" src="https://images.unsplash.com/photo-1592796820290-ff5b665c86e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1470&q=80" />
-                <div class="about-div">
-                    <h4>About Me</h4> 
-                    <p id="about-paragraph">Frontend Developer working with HTML, CSS, and JavaScript to build fully-responsive and engaging websites.</p> 
-                    <p>I help businesses create an online presence through:</p>
-                    <ul id="about-list">
-                        <li>Fully Responsive Websites</li>
-                        <li>Email Marketing</li>
-                        <li>Social Media Marketing</li>
-                        <li>Brand Development</li>
-                    </ul>
-                    <a id="cta" href="https://www.linkedin.com/in/mitrerogelio/"><button class="button">Learn More</button></a>
-                </div>
-            </article>
-        </section>
+        </main>
+
     </main>
-
-    <footer>
-        <article>
-            <ul class="footer-list" id="footer-socials">
-                <li class="social-icon"><a target="_blank" class="fab fa-linkedin footer" href="https://www.linkedin.com/in/mitrerogelio/"></a></li>
-                <li class="social-icon"><a target="_blank" class="fab fa-github-square footer" href="https://github.com/mitrerogelio"></a></li>
-                <li class="social-icon"><a target="_blank" class="fab fa-instagram-square footer" href="https://www.instagram.com/rogeliocodes/"></a></li>
-            </ul>
-            <ul class="footer-list" id="footer-nav">
-                <li><a href="#">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="mailto:rogelio.mitre@outlook.com">contact</a></li>
-            </ul>
-            <p><a href="#">rogelio mitre</a></p>
-        </article>
+    <!-- Footer -->
+    <footer id="footer" role="img" aria-label="Developer on computer - Jefferson Santos | Unsplash">
+        <h2>Let's talk about web development.</h2>
+        <button class="button" id="footer-cta"><a class="link" id="footer-link" href="mailto:rogelinmitre@gmail.com" target="_blank" >></a></button>
     </footer>
-   </body>
-</html>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html> 

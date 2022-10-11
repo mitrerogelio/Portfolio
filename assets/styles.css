@@ -1,0 +1,379 @@
+/* Universal */
+    * { 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        list-style: none;
+        color: rgb(30, 57, 50);
+        flex-wrap: nowrap;
+        flex-shrink: 1;
+    }
+    body {
+        margin: .5px;
+    }
+    a, .link {
+        text-decoration: none;
+        color: inherit;
+        font-size: inherit;
+        background-color: inherit;
+        font-weight: inherit;
+    }
+    strong {
+        font-weight: 600;
+    }
+    ul {
+        padding: 5px 5px;
+    }
+    li {
+        line-height: 35px;
+    }
+    .button {
+        color: white;
+        background-color: #9bba66;
+        padding: 7px 16px;
+        font-size: 1.25rem;
+        border: none;
+    }
+    .button:hover {
+        background-color: black;
+        color: white;
+    }
+/* Nav */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-nav {
+        width: 550px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #nav-one {
+        width: 800px;
+        font-size: 1.25rem;
+    }
+    h1 {
+        font-size: 2rem;
+        padding: 0rem .5rem;
+    }
+    #header-pin {
+        font-size: 1rem;
+    }
+    .header-button {
+        font-size: inherit;
+        background-color: gainsboro;
+        color: black;
+        border-radius: 15px;
+    }
+    #book-button {
+        background-color: #9bba66;
+        color: white;
+    }
+    #book-button:hover {
+        background-color: black;
+        color: white;
+    }
+    #nav-link {
+        padding: 0px 13px;
+        width: fit-content;
+    }
+    #nav-two {
+        justify-content: space-evenly;
+    }
+    .navbar-links ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .navbar-links ul li {
+        padding-right: 3rem;
+    }
+    .toggle {
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    .toggle .line {
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;   
+    }
+    .link a {
+        display: block;
+        padding: 1rem;
+    }
+
+/* Hero */
+    section.hero {
+        background-image: url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+        background-size: cover;
+        opacity: .9;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 800px;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero-text {
+        color: inherit;
+        margin-left: 70px;
+    }
+    #hero-maintext {
+        font-size: 4.5rem;
+        text-align: left;
+        margin-bottom: 5px;
+        padding-left: 0;
+    }
+    #hero-subtext {
+        font-size: 2rem;
+        width: 50%;
+        text-align: left;
+    }
+    #hero-button {
+        font-size: 1.45rem;
+        padding: 10px 25px;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+/* Projects */
+    #projects-section {
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    #projects-section > h2 {
+        font-size: 2.25rem;
+    }
+    p#projects-subheading {
+        width: 70%;
+        margin: auto;
+    }
+    #projects-section > p {
+        color: inherit;
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+    }
+    .project-card {
+        margin: auto 40px;
+        max-width: 500px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .project-card > img {
+        height: 300px;
+        max-width: 450px;
+        border-radius: 10px;
+    }
+    .project-heading {
+        height: 30px;
+        font-size: 24px;
+        color: black;
+        margin: 15px 0px 0px 0px;
+    }
+    .project-description {
+        color: #9C9C9C;
+        text-align: left;
+        margin: 5px 0px;
+    }
+    .project-card > .button {
+        font-size: .9rem;
+        margin: 10px 0px;
+        font-weight: bold;
+    }
+    
+/* Middle Image */
+#decor {
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1586244346603-b97b4fdb87e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* About Section */
+    #about-section {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: space-evenly;
+        padding: 5%;
+        margin: 2% auto;
+        text-align: left;
+    }
+    #about-text {
+        text-align: inherit;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 40%;
+    }
+    .sm-spacing {
+        margin: 10px 0px;
+    }
+    #about-heading {
+        font-size: 4rem;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    #about-subheading {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: inherit;
+        margin-top: 5px;
+    }
+    #about-text > p {
+        color: inherit;
+        text-align: left;
+        line-height: 2rem;
+    }
+    #about-image {
+        max-width: 550px;
+        width: 50%;
+        margin: 30px 0px auto 5px;
+    }
+    
+/* Footer */
+    footer {
+        height: 400px;
+        padding: 7rem 4rem;
+        background-image: url("img/footer-overlay.png");
+        background-position: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    footer > h2 {
+        width: 40%;
+        margin: unset;
+        color: white;
+        font-size: 4rem;
+        text-align: left;
+    }
+    #footer-cta {
+        width: 15%;
+        font-size: 4.5rem;
+        height: 100px;
+        border-radius: 15px;
+    }
+    #footer-link {
+        background-color: unset;
+        margin: auto;
+    }
+
+/* Media Queries */   
+    @media (max-width: 1150px) {
+        #nav-two {
+            display: none;
+        }
+        #nav-one {
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 1%;
+        }
+        .toggle {
+            display: flex;
+        }   
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0px;
+            padding: 0px;
+        }
+        .link a {
+            width: 100%;
+            text-align: center;
+        }
+        .link a {
+            padding: .5rem 1rem;
+        }
+        .navbar-links {
+            display: none;
+        }
+        .navbar-links ul li {
+            padding: 2px 0px;
+        }
+        .navbar-links.open {
+            display: flex;
+            width: 100%;
+            font-size: 22px;
+        }
+        h1#hero-maintext {
+            width: 90%;
+            font-size: 7vw;
+        }
+        h3#hero-subtext {
+            width: 50%;
+            font-size: 2vw;
+        }
+        #about-section {
+            flex-flow: column-reverse wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        h2#about-heading {
+            font-size: 3vw;
+        }
+        h3#about-subheading {
+            font-size: 2vw;
+        }
+        article#about-text > p {
+            font-size: 1rem;
+            line-height: initial;
+        }
+    }
+    @media (max-width: 800px) {
+        #hero {
+            justify-items: center;
+        }
+        #nav-one {
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #nav-one > h1 {
+            font-size: 2.25rem;
+            padding: 0 2.50rem;
+        }
+        #about-image {
+            width: 50%;
+            margin-top: 30px;
+        }
+        h2#about-heading {
+            font-size: 4vw;
+            width: 80%;
+        }
+        h3#about-subheading {
+            font-size: 3vw;
+        }
+        article#about-text > p {
+            font-size: 2vw;
+            line-height: initial;
+        }
+        #footer {
+            height: 200px;
+        }
+        #footer > h2 {
+            font-size: 4vw;
+        }
+        #footer-cta {
+            height: 75px;
+            font-size: 3vw;
+        }
+    }
