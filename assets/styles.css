@@ -82,7 +82,6 @@
     }
     #nav-two {
         justify-content: space-evenly;
-        font-size: .75rem;
     }
     .navbar-links ul {
         display: flex;
@@ -130,14 +129,14 @@
         margin-left: 70px;
     }
     #hero-maintext {
-        font-size: 4rem;
+        font-size: 4.5rem;
         text-align: left;
         margin-bottom: 5px;
         padding-left: 0;
     }
     #hero-subtext {
-        font-size: 1.25rem;
-        width: 35%;
+        font-size: 2rem;
+        width: 50%;
         text-align: left;
     }
     #hero-button {
@@ -210,8 +209,8 @@
 /* About Section */
     #about-section {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
+        flex-flow: row-reverse wrap;
+        justify-content: space-evenly;
         padding: 5%;
         margin: 2% auto;
         text-align: left;
@@ -240,56 +239,42 @@
     }
     #about-text > p {
         color: inherit;
-        font-size: 1.1rem;
         text-align: left;
         line-height: 2rem;
-        width: 100%;
     }
     #about-image {
-        min-width: 400px;
-        width: 40%;
-        margin: auto;
+        max-width: 550px;
+        width: 50%;
+        margin: 30px 0px auto 5px;
     }
     
 /* Footer */
     footer {
+        height: 400px;
+        padding: 7rem 4rem;
         background-image: url("img/footer-overlay.png");
         background-position: center;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    footer > h2, label, p {
-        color: white;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
     }
     footer > h2 {
-        font-size: 2.25rem;
-    }
-    form {
-        align-self: center;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-    input, textarea, label {
-        width: 80%;
-        max-width: 800px;
-        border-radius: 8px;
-        padding: 2%;
+        width: 40%;
+        margin: unset;
+        color: white;
+        font-size: 4rem;
         text-align: left;
-        border: none;
     }
-    label {
-        text-align: left;
-        font-size: 1.15rem;
-        padding: unset;
-        margin: 20px auto 10px 4rem;
+    #footer-cta {
+        width: 15%;
+        font-size: 4.5rem;
+        height: 100px;
+        border-radius: 15px;
     }
-    #submit {
-        grid-area: button;
-        width: 85%;
-        height: 50px;
-        margin: 15px 0px;
+    #footer-link {
+        background-color: unset;
+        margin: auto;
     }
 
 /* Media Queries */   
@@ -338,6 +323,11 @@
             width: 50%;
             font-size: 2vw;
         }
+        #about-section {
+            flex-flow: column-reverse wrap;
+            justify-content: center;
+            align-items: center;
+        }
         h2#about-heading {
             font-size: 3vw;
         }
@@ -361,17 +351,9 @@
             font-size: 2.25rem;
             padding: 0 2.50rem;
         }
-        #about-section {
-            padding: 1%;
-            flex-flow: column-reverse wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        #about-text {
-            width: 500px;
-        }
-        #about-text > p {
-            width: 100%;
+        #about-image {
+            width: 50%;
+            margin-top: 30px;
         }
         h2#about-heading {
             font-size: 4vw;
@@ -384,7 +366,14 @@
             font-size: 2vw;
             line-height: initial;
         }
-        label {
-            margin: 20px auto 10px 3rem;
+        #footer {
+            height: 200px;
+        }
+        #footer > h2 {
+            font-size: 4vw;
+        }
+        #footer-cta {
+            height: 75px;
+            font-size: 3vw;
         }
     }
