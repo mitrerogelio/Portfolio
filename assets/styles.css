@@ -28,10 +28,7 @@
     li {
         line-height: 35px;
     }
-    .fas {
-        line-height: unset;
-    }
-    .button {
+   .button {
         color: white;
         background-color: #9bba66;
         padding: 7px 16px;
@@ -65,6 +62,7 @@
     #header-pin {
         font-size: 1rem;
         margin-right: 13px;
+        line-height: unset;
     }
     .header-button {
         font-size: inherit;
@@ -179,7 +177,7 @@
         align-items: flex-start;
     }
     .project-card > img {
-        height: 300px;
+        height: auto;
         max-width: 450px;
         border-radius: 10px;
     }
@@ -313,7 +311,6 @@
         .navbar-links.open {
             display: flex;
             width: 100%;
-            font-size: 22px;
         }
         section#hero{
             height: 400px;
@@ -336,7 +333,12 @@
         .project-card > img {
             width: 100%;
         }
+        #decor {
+            height: 300px;
+        }
         #about-section {
+            margin: 80px auto;
+
             flex-flow: column-reverse wrap;
             justify-content: center;
             align-items: center;
@@ -359,7 +361,8 @@
             font-size: 3vw;
         }
         #footer > h2 {
-            font-size: 3vw;
+            font-size: 2rem;
+            overflow: unset;
         }
 
     }
@@ -380,20 +383,25 @@
             margin-top: 30px;
         }
         h2#about-heading {
-            font-size: 3vw;
+            font-size: 1.3rem;
         }
         h3#about-subheading {
-            font-size: 3vw;
-            width: 70%;
+            font-size: 1.25rem;
         }
         article#about-text > p {
-            font-size: 2vw;
+            font-size: .75rem;
             line-height: initial;
         }
-        #footer-cta {
-            padding: 3% 5%;
+        strong {
+            font-size: 1.10em;
+            font-weight: bold;
         }
         footer {
-            height: 200px;
+            height: 300px;
+            padding: 10% 5%;
+        }
+        #footer-cta {
+            padding: 6% 7%;
+            font-size: 1.5rem;
         }
     }
