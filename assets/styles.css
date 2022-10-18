@@ -8,6 +8,7 @@
         color: rgb(30, 57, 50);
         overflow-x: hidden;
         overflow-y: auto;
+        scroll-behavior: smooth;
     }
     body {
         margin: .5px;
@@ -107,6 +108,7 @@
         width: 100%;
         background-color: black;
         border-radius: 10px;   
+         
     }
     .link a {
         display: block;
