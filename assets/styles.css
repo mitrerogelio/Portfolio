@@ -79,16 +79,12 @@
         background-color: black;
         color: white;
     }
-    #nav-link {
+    #nav-link, .navbar-links a {
         padding: 0px 13px;
         width: fit-content;
     }
     #nav-two {
         justify-content: space-evenly;
-    }
-    .navbar-links ul {
-        display: flex;
-        flex-flow: row nowrap;
     }
     #toggle {
         display: none;
@@ -293,6 +289,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 2%;
     }
     footer > h2, label, p {
         color: white;
@@ -344,15 +341,14 @@
         }
         #toggle {
             display: flex;
+            top: 25px;
         }   
         .navbar-links {
             display: none;
-            height: 0px;
             width: 100%;
             flex-direction: column;
             justify-content: space-evenly;
-            margin: 0px;
-            padding: 0px;
+            align-items: center;
         }
         .navbar-links.open {
             display: flex;
@@ -420,6 +416,9 @@
         #nav-one > h1 {
             font-size: 1.5rem;
             margin-left: 5%;
+        }
+        #toggle {
+            top: 10px;
         }
         #hero {
             height: 350px;
