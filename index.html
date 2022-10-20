@@ -15,18 +15,14 @@
     <header>
         <nav class="header-nav" id="nav-one">
             <h1>Rogelio Mitre</h1>
-            <a href="#" class="toggle">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#projects-section">Projects</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+            <span id="toggle">
+                <div class="burger"></div>
+            </span>
+            <nav class="navbar-links">
+                    <a href="#projects-section">Projects</a>
+                    <a href="#about-section">About</a>
+                    <a href="#footer">Contact</a>
+            </nav>
         </nav>
         <nav class="header-nav" id="nav-two">
             <span class="fas fa-regular fa-envelope" id="header-pin"><a id="nav-link" href="#footer">Send an email</a></span>
@@ -82,8 +78,19 @@
     </main>
     <!-- Footer -->
     <footer id="footer" role="img" aria-label="Developer on computer - Jefferson Santos | Unsplash">
-        <h2>Let's talk about web development.</h2>
-        <a class="link button" id="footer-cta" href="mailto:rogelinmitre@gmail.com" target="_blank" >></a>
+        <h2>How can I help?</h2>
+        <form class="contact" method="post" name="form" data-netlify="true">
+            <label for="user-name" id="n-label">Name</label>
+            <input type="text" name="name" id="user-name" placeholder="Please enter your name">
+
+            <label for="user-email" id="e-label">Email</label>
+            <input type="email" id="user-email" name="email" placeholder="Please enter your email">
+
+            <label for="user-message" id="m-label">Message</label>
+            <textarea id="user-message" name="message" placeholder="Let's work together!" cols="80" rows="8"></textarea>
+            <button type="submit" name="submit" class="button" id="submit">Submit ></button>
+        </form>
+        <p>© rogeliocodes. All rights reserved.</p>
     </footer>
 <script type="text/javascript" src="main.js"></script>
 </body>
