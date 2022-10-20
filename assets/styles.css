@@ -90,9 +90,6 @@
         display: flex;
         flex-flow: row nowrap;
     }
-    .navbar-links a {
-        padding-right: 3rem;
-    }
     #toggle {
         display: none;
         text-align: start;
@@ -102,16 +99,15 @@
         right: 2em;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        height: 50px;
         cursor: pointer;
         transition: all .5s ease-in-out;
       }
       .burger {
         text-align: inherit;
         overflow: inherit;
-        width: 50px;
-        height: 6px;
+        width: 30px;
+        height: 4px;
         background: black;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -121,8 +117,8 @@
       .burger::after {
         content: '';
         position: absolute;
-        width: 50px;
-        height: 6px;
+        width: 30px;
+        height: 4px;
         background: black;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -302,7 +298,7 @@
         color: white;
     }
     footer > h2 {
-        font-size: 2.25rem;
+        font-size: 1.3rem;
     }
     form {
         align-self: center;
@@ -317,18 +313,20 @@
         padding: 2%;
         text-align: left;
         border: none;
+        margin-right: 5%;
+        font-size: .75rem;
     }
     label {
         text-align: left;
-        font-size: 1.15rem;
+        font-size: .75rem;
         padding: unset;
-        margin: 20px auto 10px 4rem;
+        margin: 20px auto 10px 5%;
     }
     #submit {
-        grid-area: button;
         width: 85%;
         height: 50px;
-        margin: 15px 0px;
+        margin: 30px auto;
+        font-size: 1.1rem;
     }
 
 /* Media Queries */   
@@ -407,11 +405,10 @@
             line-height: initial;
         }
         #footer > h2 {
-            font-size: 2rem;
             overflow: unset;
         }
         footer {
-            height: 650px;
+            height: 700px;
         }
 
     }
@@ -421,8 +418,8 @@
             align-items: flex-start;
         }
         #nav-one > h1 {
-            font-size: 2.25rem;
-            padding: 0 2.50rem;
+            font-size: 1.5rem;
+            margin-left: 5%;
         }
         #hero {
             height: 350px;
@@ -446,6 +443,6 @@
             font-weight: bold;
         }
         label {
-            margin: 20px auto 10px 3rem;
+            margin: 20px auto 10px 5%;
         }
     }
