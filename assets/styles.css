@@ -79,6 +79,7 @@
         background-color: black;
         color: white;
     }
+
     #nav-link, #navbar-links a {
         padding: 0px 13px;
         width: fit-content;
@@ -354,9 +355,8 @@
         }
         #navbar-links.open {
             height: 150px;
-            display: flex;
         }
-
+        
         section#hero{
             height: 400px;
         }
