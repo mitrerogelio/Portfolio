@@ -35,10 +35,12 @@
         padding: 7px 16px;
         font-size: 1.25rem;
         border: none;
+        transition-delay: .09s;
     }
     .button:hover {
         background-color: black;
         color: white;
+        cursor: pointer;
     }
 /* Nav */
     header {
@@ -60,7 +62,10 @@
         font-size: 2rem;
         padding: 0rem .5rem;
     }
-    #header-pin {
+    .mobile-only {
+        display: none;
+    }
+    #fontawesome-icon {
         font-size: 1rem;
         margin-right: 13px;
         line-height: unset;
@@ -71,11 +76,11 @@
         color: black;
         border-radius: 15px;
     }
-    #book-button {
+    #linkedin-button {
         background-color: #9bba66;
         color: white;
     }
-    #book-button:hover {
+    #linkedin-button:hover {
         background-color: black;
         color: white;
     }
@@ -285,7 +290,7 @@
     
 /* Footer */
     footer {
-        background-image: url("img/footer-overlay.png");
+        background-image: url("../assets/img/footer-overlay.png");
         background-position: center;
         display: flex;
         flex-direction: column;
@@ -326,6 +331,10 @@
         margin: 5% auto;
         font-size: 1.1rem;
     }
+    #submit:hover {
+        background-color: gainsboro;
+        color: black;
+    }
 
 /* Media Queries */   
     @media (max-width: 1150px) {
@@ -340,6 +349,9 @@
             flex-direction: column;
             margin-bottom: 1%;
         }
+        .mobile-only {
+            display: inherit;
+        }
         #toggle {
             display: flex;
             top: 25px;
@@ -352,9 +364,13 @@
             align-items: center;
             transition: height 0.5s ease;
             height: 0px;
+            font-size: 1.25rem;
+        }
+        nav * {
+            overflow-y: hidden;
         }
         #navbar-links.open {
-            height: 150px;
+            height: 200px;
         }
         
         section#hero{
@@ -383,7 +399,6 @@
         }
         #about-section {
             margin: 80px auto;
-
             flex-flow: column-reverse wrap;
             justify-content: center;
             align-items: center;
