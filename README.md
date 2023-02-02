@@ -1,7 +1,7 @@
 # Portfolio
 
-I began my career in web development building frontends using HTML, CSS, and JavaScript as well as social media marketing and design. The growing capabilities of what users could do on the web always fascinated me. This is why I now seek to leverage the ever-expanding JavaScript ecosystem to build full-scale applications on the web with tools such as: React, Express, MongoDB, and TailwindCSS.
+As a C# web developer, I have a strong focus on delivering top-notch web applications that offer a seamless user experience. My expertise in C# and ASP.NET, combined with my understanding of the MVC design pattern and OOP principles, allows me to build dynamic, full-featured web apps. I am passionate about creating visually appealing and interactive frontend elements, and I am constantly exploring new ways to enhance the functionality of the applications I build.
 
-When I'm not writing code, I love to explore the world of home espresso. I am also honored to be surrounded by a wonderful wife of 5 years, two boys, and a group of fellow developers who help each other grow daily. 
+Whether it's through the integration of REST APIs or the use of modern technologies like React and Tailwind CSS, I am dedicated to delivering high-quality web solutions to my clients.
 
 Link to full page: https://www.rogeliomitre.com/
