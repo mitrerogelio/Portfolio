@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <!-- Alternating Feature Sections -->
+  <!-- Projects Sections -->
   <section class="relative overflow-hidden pt-12 pb-32" id="projects">
     <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"></div>
     <article class="relative">
@@ -102,24 +102,27 @@
     </article>
 
     <article class="mt-8 pt-16 border-t border-gray-200">
-      <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
-        <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-8 lg:px-0">
-          <div>
-            <div class="mt-6 lg:ml-12">
-              <h2 class="text-3xl font-bold tracking-tight text-gray-900">Grocery Inventory API</h2>
-              <p class="mt-4 text-lg text-gray-500">A scalable and type-safe backend API using the RESTful convention for a grocery store that is connected to a SQL database. The API can be utilized to manage thousands of products due to it's architecture.</p>
-              <p class="text-base font-medium">Tools: ASP.NET Core Web API, Entity Framework Core, SQLite</p>
-              <div class="mt-6">
-                <a href="https://github.com/mitrerogelio/brewrecipes-api" target="_blank" class="btn btn-primary normal-case">View project</a>
-              </div>
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:px-8">
+        <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+          <div class="mt-6 lg:ml-12">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900">Grocery Inventory API</h2>
+            <p class="mt-4 text-lg text-gray-500">A scalable and type-safe backend API using the RESTful convention for a grocery store that is connected to a SQL database. The API can be utilized to manage thousands of products due to its architecture.</p>
+            <p class="text-base font-medium">Tools: ASP.NET Core Web API, Entity Framework Core, SQLite</p>
+            <div class="mt-6">
+              <a href="https://github.com/mitrerogelio/grocery-api" target="_blank" class="btn btn-primary normal-case">View project</a>
             </div>
+          </div>
+        </div>
+        <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
+          <div class="sm:flex sm:justify-center sm:m-auto sm:p-auto lg:relative lg:m-0 lg:h-full lg:px-0">
+            <img class="md:w-full sm:w-3/4 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="./assets/img/grocery-api-swagger.gif" alt="Grocery Inventory API with Swagger UI - Desktop View">
           </div>
         </div>
       </div>
     </article>
     
-    <article class="mt-8 pt-16 border-t border-gray-200">
-      <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
+    <article class="mt-8 py-16 border-t border-gray-200">
+      <div class="lg:mx-auto lg:max-w-7xl lg:p-8 lg:my-8">
         <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-8 lg:px-0">
           <div>
             <div class="mt-6 lg:ml-12">
@@ -135,9 +138,9 @@
       </div>
     </article>
 
-    <article class="mt-8 pt-16 border-t border-gray-200">
-      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:px-8">
-        <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+    <article class="py-16 border-t border-gray-200">
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2">
+        <div class="max-w-xl px-4 sm:px-6 lg:col-start-1 lg:mx-0 lg:max-w-none mx-auto">
           <div class="mt-6 lg:ml-12">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900">MyFitnessBuddy</h2>
             <p class="mt-4 text-lg text-gray-500">A MERN application designed for fitness enthusiasts and gym-goers. This collaborative full-stack web application allows users to log their exercise routines and track their progress. It is the perfect tool for anyone looking to take their fitness to the next level.</p>
@@ -147,9 +150,9 @@
             </div>
           </div>
         </div>
-        <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
-          <div class="sm:flex sm:justify-center sm:m-auto sm:p-auto lg:relative lg:m-0 lg:h-full lg:px-0">
-            <img class="md:w-full sm:w-3/4 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="./assets/img/mern-app.gif" alt="MyFitnessBuddy MERN Applicatin - Desktop View">
+        <div class="mt-12 sm:mt-16 lg:col-start-2 lg:mt-0">
+          <div class="sm:flex sm:justify-center sm:m-auto sm:p-auto lg:relative lg:m-0 lg:h-auto lg:px-0">
+            <img class="md:w-full sm:w-3/4 rounded-xl shadow-xl lg:absolute lg:right-0 lg:h-auto lg:w-max lg:h-auto lg:max-w-none" src="./assets/img/mern-app.gif" alt="MyFitnessBuddy MERN Application - Desktop View">
           </div>
         </div>
       </div>
@@ -211,7 +214,7 @@
           <span class="flex items-center justify-between">
             <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="m448 73.143v45.714c0 40.286-100.333 73.143-224 73.143s-224-32.857-224-73.143v-45.714c0-40.286 100.333-73.143 224-73.143s224 32.857 224 73.143zm0 102.857v102.857c0 40.286-100.333 73.143-224 73.143s-224-32.857-224-73.143v-102.857c48.125 33.143 136.208 48.572 224 48.572s175.874-15.429 224-48.572zm0 160v102.857c0 40.286-100.333 73.143-224 73.143s-224-32.857-224-73.143v-102.857c48.125 33.143 136.208 48.572 224 48.572s175.874-15.429 224-48.572z"/></svg>
           </span>
-          <h3 class="mt-4 text-base-content">MongoDB</h3>
+          <h3 class="mt-4 text-base-content">SQL/NoSQL</h3>
         </article>
         <article class="flex flex-col items-center justify-between w-min h-24">
           <span class="flex items-center justify-between">
